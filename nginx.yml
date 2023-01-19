@@ -1,0 +1,14 @@
+# this yml will create a ngnix server on minicube
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx2
+  labels:
+      app: nginx2
+      tier: fromtend
+spec:
+  containers:
+       - name: nginx
+         image: nginx
+
+
